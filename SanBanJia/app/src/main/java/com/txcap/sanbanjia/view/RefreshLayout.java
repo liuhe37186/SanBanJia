@@ -1,4 +1,4 @@
-package com.txcap.sanbanjia;
+package com.txcap.sanbanjia.view;
 
 /**
  * Created by liuhe on 15/8/13.
@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.AbsListView;
 import android.widget.ListView;
+
+import com.txcap.sanbanjia.R;
 
 /**
  * 继承自SwipeRefreshLayout,从而实现滑动到底部时上拉加载更多的功能.

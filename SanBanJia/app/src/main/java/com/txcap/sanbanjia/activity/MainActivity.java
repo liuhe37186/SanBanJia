@@ -1,17 +1,17 @@
-package com.txcap.sanbanjia;
+package com.txcap.sanbanjia.activity;
 
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import com.marshalchen.common.ui.ToastUtil;
+import com.txcap.sanbanjia.R;
+import com.txcap.sanbanjia.fragment.HomeFragment;
+import com.txcap.sanbanjia.fragment.InformationFragment;
+import com.txcap.sanbanjia.fragment.StoreFragment;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
