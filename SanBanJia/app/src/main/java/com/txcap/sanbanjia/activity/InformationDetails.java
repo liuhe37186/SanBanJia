@@ -9,6 +9,7 @@ import android.webkit.WebViewClient;
 import com.txcap.sanbanjia.R;
 
 /**
+ * information
  * Created by liuhe on 15/8/15.
  */
 public class InformationDetails extends Activity {
