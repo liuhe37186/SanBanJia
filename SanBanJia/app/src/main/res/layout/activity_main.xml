@@ -3,18 +3,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="资讯"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </RelativeLayout>
     <RelativeLayout
         android:id="@+id/rl_top"
+        android:layout_below="@+id/rl_title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/ll_bottom"
         android:background="#CCF">
-        <!--<fragment-->
-            <!--android:id="@+id/fm_top"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-             <!--/>-->
     </RelativeLayout>
 
 
