@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -35,6 +36,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.zip.Inflater;
 
 /**
  * Created by liuhe on 15/8/12.
@@ -64,6 +66,8 @@ public class InformationFragment extends Fragment {
     private Integer id = 2;
 
     public Activity mView;
+
+    ViewPager mPager;
     Handler mHandler = new Handler(){
         @Override
         public void handleMessage(Message msg){
@@ -80,6 +84,7 @@ public class InformationFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mView = this.getActivity();
+
         // 获取RefreshLayout实例
         myRefreshListView = (RefreshLayout) this.getActivity().findViewById(R.id.swipe_refresh);
         // 设置下拉刷新时的颜色值,颜色值需要定义在xml中
@@ -105,10 +110,13 @@ public class InformationFragment extends Fragment {
                 Intent details = new Intent(mView, InformationDetails.class);
                 InformationTitleBean titleBean = (InformationTitleBean) listView.getItemAtPosition(position);
                 int urlid = titleBean.getId();
-                details.putExtra("url",urlid);
+                details.putExtra("url", urlid);
                 startActivity(details);
             }
         });
+
+//        mPager = (ViewPager) mView.findViewById(R.id.vp_information);
+//        mPager.addView(LayoutInflater.from(mView).inflate(R.layout.fragment_home,null));
 
         // 设置下拉刷新监听器
         myRefreshListView.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -166,10 +174,10 @@ public class InformationFragment extends Fragment {
                 if (i == 200) {
                     String jsonStr;
                     jsonStr = new String(bytes);
-                    Log.d("xxxxx", jsonStr);
+//                    Log.d("xxxxx", jsonStr);
                     Gson gson = new Gson();
                     InformationResultBean result = gson.fromJson(jsonStr, InformationResultBean.class);
-                    Log.i("xxxx", result.toString());
+//                    Log.i("xxxx", result.toString());
                     data = result.getData();
 
                     adapter = new ListViewAdapter(mView, data);

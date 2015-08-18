@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<color name="pull_to_refresh_label_color">#FF999999</color>
-<color name="list_bg_p">#FFEEEEEE</color><!--列表标题颜色_灰色 -->
-<color name="list_bg_n">#FFFAFAFA</color><!--列表标题颜色_灰色 -->   
-<color name="GP_btn_n_textColor">#FF000000</color><!--按钮正常字体颜色 -->
-<color name="GP_btn_p_textColor">#FFFFFFFF</color><!--按钮按下字体颜色 -->
-<color name="GP_nav_bottom_n_textColor">#FF808080</color><!--底部tap栏正常字体颜色 -->
-<color name="GP_nav_bottom_p_textColor">#FFFFFFFF</color><!--底部tap栏按下字体颜色 -->
-<color name="GP_nav_top_n_textColor">#FF000000</color><!--顶部导航栏文字颜色 -->
-<color name="GP_nav_top_p_textColor">#FF808080</color><!--按钮按下字体颜色 --> 
+    <color name="pull_to_refresh_label_color">#FF999999</color>
+    <color name="list_bg_p">#FFEEEEEE</color>
+    <!--列表标题颜色_灰色 -->
+    <color name="list_bg_n">#FFFAFAFA</color>
+    <!--列表标题颜色_灰色 -->
+    <color name="GP_btn_n_textColor">#FF000000</color>
+    <!--按钮正常字体颜色 -->
+    <color name="GP_btn_p_textColor">#FFFFFFFF</color>
+    <!--按钮按下字体颜色 -->
+    <color name="GP_nav_bottom_n_textColor">#FF808080</color>
+    <!--底部tap栏正常字体颜色 -->
+    <color name="GP_nav_bottom_p_textColor">#FFFFFFFF</color>
+    <!--底部tap栏按下字体颜色 -->
+    <color name="GP_nav_top_n_textColor">#FF000000</color>
+    <!--顶部导航栏文字颜色 -->
+    <color name="GP_nav_top_p_textColor">#FF808080</color>
+    <!--按钮按下字体颜色 -->
+    <color name="global_color">#E72A3C</color>
+    <!-- 整体布局颜色-->
 </resources>
